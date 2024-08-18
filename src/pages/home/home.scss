@@ -2,18 +2,19 @@
 
 .home-parent {
   width: 100%;
-  height: 100vh;
+  height: auto;
   background-color: var(--black);
   // background-color: red;
 
   .home-cont {
+    height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
 
     .left {
-      width: 70%;
-      height: 100%;
+      width: 50%;
+      // height: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -149,7 +150,7 @@
       .image {
         height: 100%;
         width: 100%;
-        background-image: url("../../assets/photo.png");
+       
       }
     }
   }
@@ -158,7 +159,7 @@
 
 @media only screen and (max-width:1000px){
   .home-parent {
-    height: 600px;
+    // height: 600px;
   }
 .image{
   background-size: contain !important;
@@ -167,16 +168,22 @@
 }
 @media only screen and (max-width:900px){
   .home-parent {
-    height: 100vh;
+    height: auto;
 
     .home-cont{
-      padding: 20px 0px !important;
+      padding: 20px 0px 0px 0px !important;
       flex-direction: column;
 
       .right{
         padding: 0px;
    width: 100%;
-   height: 70%;
+   height: 600px !important;
+   justify-content: flex-end;
+align-items: flex-end !important;
+   .image{
+    width: auto;
+    height: 100%;
+  }
       }
 
       .left{
@@ -186,9 +193,12 @@
       }
     }
   }
-.image{
-  padding: 0px;
-  background-size: contain !important;
+
+
 }
 
+@media only screen and (max-width:500px){
+  .postion-text{
+    font-size: 44px !important;
+  }
 }

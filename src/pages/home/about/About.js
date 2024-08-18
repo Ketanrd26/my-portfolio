@@ -1,11 +1,15 @@
 import React from "react";
 import "../about/about.scss";
+import aboutImg from "../../../assets/about-image.png"
 const About = () => {
   return (
     <>
       <div className="about-section-parent parent" id="about">
         <div className="about-section-cont cont">
-          <div className="left bg-img-cover"></div>
+          {/* <div className="left bg-img-cover"></div> */}
+         <div className="left">
+         <img src={aboutImg} className="aboutimg" alt="" />
+         </div>
           <div className="right">
             <div className="top">
               <h3>About Me</h3>
