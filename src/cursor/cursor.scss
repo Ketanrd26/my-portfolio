@@ -1,0 +1,15 @@
+.cursor{
+    position: fixed;
+    z-index: 999999999999999999999999;
+    height: 100px;
+    aspect-ratio: 1;
+    background-color: var(--blue);
+    -webkit-filter: blur(90px);
+    -moz-filter: blur(90px);
+    -o-filter: blur(90px);
+    -ms-filter: blur(90px);
+    filter: blur(80px);
+    background-blend-mode: lighten;
+    transform: translate(-50%,-50%);
+    opacity: 1;
+}
