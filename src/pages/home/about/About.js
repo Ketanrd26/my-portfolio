@@ -138,7 +138,7 @@ const About = () => {
             </div>
           </div>
         </div>
-
+{/* 
         <div className="skills-cont cont">
           <h4>Development Skills</h4>
           <p>
@@ -159,8 +159,8 @@ const About = () => {
               }
          
           </div>
-        </div>
-        <div className="skills-cont cont">
+        </div> */}
+        {/* <div className="skills-cont cont">
           <h4>Vfx Skills</h4>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore ad
@@ -180,7 +180,7 @@ const About = () => {
               }
          
           </div>
-        </div>
+        </div> */}
       </div>
       <div className="work-process">
         

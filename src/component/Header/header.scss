@@ -67,5 +67,20 @@ a{
     right: 0;
     margin-left: 0px;
     margin-right: 0px;  
+
+  }
+}
+
+@media (max-height:750px){
+
+  .header-menu{
+
+    .top{
+      gap: calc(var(--unit)*5) !important;
+
+      a{
+        font-size: 14px;
+      }
+    }
   }
 }
