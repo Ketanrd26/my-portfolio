@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "../home/home.scss";
 import About from "./about/About";
 import homeImg from "../../assets/photo.png"
+import Project from "../projects/Project";
 const Home = () => {
   const [showText1, setShowText1] = useState(true);
 
@@ -55,13 +56,16 @@ ARTIST
           </div>
           <div className="right">
             <div className="blur"></div>
-            {/* <div className="image bg-img-cover"></div> */}
-            <img src={homeImg} className="image" alt="" />
+            <div className="image bg-img-cover"></div>
+     
           </div>
         </div>
       </div>
       {/* about */}
       <About/>
+
+      {/* Projects */}
+      <Project/>
     </>
   );
 };

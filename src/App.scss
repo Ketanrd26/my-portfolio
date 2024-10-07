@@ -128,7 +128,7 @@ font-size: 10px;
 }
 
 .btn{
-  background-color: var(--blue);
+  background-color: var(--white);
   padding: 10px;
   border-radius: var(--unit);
   font-weight: 500;
@@ -141,4 +141,14 @@ color: var(--dark-blue);
   background-color: var(--accent);
   color: var(--white);
 }
+}
+
+.title{
+  color: var(--white);
+  font-size: calc(var(--unit)*3);
+  font-weight: 300;
+
+  .strong{
+    font-weight: 800;
+  }
 }

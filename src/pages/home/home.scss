@@ -2,7 +2,7 @@
 
 .home-parent {
   width: 100%;
-  height: auto;
+  height: 100svh;
   background-color: var(--black);
   // background-color: red;
 
@@ -38,9 +38,9 @@
         display: flex;
         flex-direction: column;
         gap: var(--unit);
-         text-align: left;
-         justify-content: flex-start;
-         align-items: flex-start;
+        text-align: left;
+        justify-content: flex-start;
+        align-items: flex-start;
         .postion-text,
         .developer-text {
           width: fit-content;
@@ -49,19 +49,18 @@
           padding: 5px;
           overflow: hidden;
 
-.text1{
-  overflow: hidden;
-}
+          .text1 {
+            overflow: hidden;
+          }
           .swipediv {
             width: 100%;
             height: 110%;
-            background-color: var(--blue);
+            background-color: var(--white);
             position: absolute;
             top: 0;
             left: -100%;
-  z-index: 1;
+            z-index: 1;
             animation: swipetext 6s infinite linear;
-   
 
             @keyframes swipetext {
               0% {
@@ -73,22 +72,18 @@
               75% {
                 left: 100%;
               }
-              100%{
+              100% {
                 left: -100%;
               }
             }
           }
-        
         }
-
-
-       
 
         .swipediv2 {
           content: "";
           width: 100%;
           height: 110%;
-          background-color: var(--blue);
+          background-color: var(--white);
           position: absolute;
           top: 0;
           right: -100%;
@@ -96,10 +91,6 @@
           z-index: 2;
         }
 
-            
-
-      
-    
         @keyframes swipe2 {
           0% {
             right: -100%;
@@ -150,55 +141,53 @@
       .image {
         height: 100%;
         width: 100%;
-       
+        background-image: url("../../assets//output-onlinegiftools.gif");
       }
     }
   }
 }
 
-
-@media only screen and (max-width:1000px){
+@media only screen and (max-width: 1000px) {
   .home-parent {
     // height: 600px;
   }
-.image{
-  background-size: contain !important;
+  .image {
+    background-size: contain !important;
+  }
 }
-
-}
-@media only screen and (max-width:900px){
+@media only screen and (max-width: 900px) {
   .home-parent {
     height: auto;
 
-    .home-cont{
+    .home-cont {
       padding: 20px 0px 0px 0px !important;
       flex-direction: column;
 
-      .right{
+      .right {
         padding: 0px;
-   width: 100%;
-   height: 600px !important;
-   justify-content: flex-end;
-align-items: flex-end !important;
-   .image{
-    width: auto;
-    height: 100%;
-  }
+        width: 100%;
+        height: 600px !important;
+        justify-content: flex-end;
+        align-items: flex-end !important;
+        .image {
+          width: 100%;
+          height: 100%;
+        }
       }
 
-      .left{
-        .postion-text,.position{
+      .left {
+        width: 100% !important;
+        .postion-text,
+        .position {
           font-size: 50px;
         }
       }
     }
   }
-
-
 }
 
-@media only screen and (max-width:500px){
-  .postion-text{
+@media only screen and (max-width: 500px) {
+  .postion-text {
     font-size: 44px !important;
   }
 }

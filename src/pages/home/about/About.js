@@ -1,87 +1,71 @@
 import React, { useEffect, useState } from "react";
 import "../about/about.scss";
-import aboutImg from "../../../assets/about-image.png";
-import Cursor from "../../../cursor/Cursor";
+import "@lottiefiles/lottie-player";
+
+
+// icons
+
+import { FaGithub } from "react-icons/fa";
+import { SiJavascript } from "react-icons/si";
+import { FaHtml5 } from "react-icons/fa";
+import { FaSass } from "react-icons/fa";
+import { RiNodejsLine } from "react-icons/ri";
+import { SiMongodb } from "react-icons/si";
+import { GrMysql } from "react-icons/gr";
+import { SiAutodeskmaya } from "react-icons/si";
+import { SiAdobephotoshop } from "react-icons/si";
+import { FaBootstrap } from "react-icons/fa";
 const About = () => {
-  const softwareUsed = [
-    {
-      title: "Photoshop",
-      bar: 80,
-    },
-    
-    {
-      title: "illustrator",
-      bar: 80,
-    },
-    {
-      title: "after effect",
-      bar: 80,
-    },
-   
-    {
-      title: "premier pro",
-      bar: 80,
-    },
-    {
-      title: "nuke",
-      bar: 80,
-    },
-    {
-      title: "maya",
-      bar: 70,
-    },
-    {
-      title: "max",
-      bar: 70,
-    },
-    {
-      title: "silhoutte",
-      bar: 80,
-    },
-  ];
-  const programmeskillsList = [
-    {
-      title: "html",
-      bar: 80,
-    },
-    
-    {
-      title: "css",
-      bar: 90,
-    },
-    {
-      title: "javascript",
-      bar: 60,
-    },
-   
-    {
-      title: "react Js",
-      bar: 50,
-    },
-    {
-      title: "angular",
-      bar: 50,
-    },
-    {
-      title: "node js",
-      bar: 50,
-    },
-    {
-      title: "mongodb",
-      bar: 50,
-    },
-    {
-      title: "bootstrap",
-      bar: 80,
-    },
-  ];
+const skill = [
+  {
+    icon :<FaGithub /> ,
+    title:"github"
+  },
+  {
+    icon :<SiJavascript /> ,
+    title:"Javascript"
+  },
+  {
+    icon :<FaHtml5 /> ,
+    title:"html"
+  },
+  {
+    icon :<FaSass /> ,
+    title:"sass"
+  },
+  {
+    icon :<RiNodejsLine /> ,
+    title:"Node js"
+  },
+  {
+    icon :<SiMongodb /> ,
+    title:"Mongodb"
+  },
+  {
+    icon :<GrMysql /> ,
+    title:"My Sql"
+  },
+  {
+    icon :<FaBootstrap />,
+    title:"Bootstrap"
+  },
+  {
+    icon :<SiAutodeskmaya /> ,
+    title:"Maya"
+  },
+  {
+    icon :<SiAdobephotoshop /> ,
+    title:"Photoshop"
+  },
+  
+]
   return (
     <>
-      <div className="about-section-parent parent" id="about">
+      <div className="about-section-parent parent blackCursor" id="about">
         <div className="about-section-cont cont">
           {/* <div className="left bg-img-cover"></div> */}
           <div className="left">
-            <img src={aboutImg} className="aboutimg" alt="" />
+            <div className="aboutimg bg-img-contain"></div>
           </div>
           <div className="right">
             <div className="top">
@@ -100,39 +84,28 @@ const About = () => {
               <div className="sections">
                 <table className="w-full">
                   <tr className="p-4">
-                    <td className="bold text-white p-2">Name :</td>
-                    <td className="text-gray-300 font-light">Ketan Dudka</td>
+                    <td className="bold text-black p-2">Name :</td>
+                    <td className="text-gray-500 font-light">Ketan Dudka</td>
                   </tr>
                   <tr className="p-4">
-                    <td className="bold text-white p-2">Study :</td>
-                    <td className="text-gray-300 font-light text-left">
+                    <td className="bold text-black p-2">Study :</td>
+                    <td className="text-gray-500 font-light text-left">
                       SavitriBai Phule Pune Univercity
                     </td>
                   </tr>
                   <tr className="p-4">
-                    <td className="bold text-white p-2">Degree :</td>
-                    <td className="text-gray-300 font-light text-left">
+                    <td className="bold text-black p-2">Degree :</td>
+                    <td className="text-gray-500 font-light text-left">
                       Bachelor Of Commerce
                     </td>
                   </tr>
                   <tr className="p-4">
-                    <td className="bold text-white p-2">Diploma Courses :</td>
-                    <td className="text-gray-300 font-light text-left">
+                    <td className="bold text-black p-2">Specialization:</td>
+                    <td className="text-gray-500 font-light text-left">
                       Vfx & Animation & Full Stack Developer
                     </td>
                   </tr>
-                  <tr className="p-4">
-                    <td className="bold text-white p-2">Mail :</td>
-                    <td className="text-gray-300 font-light text-left">
-                      Ketandudka566123@gmail.com
-                    </td>
-                  </tr>
-                  <tr className="p-4">
-                    <td className="bold text-white p-2">Contact :</td>
-                    <td className="text-gray-300 font-light text-left">
-                      7028997574
-                    </td>
-                  </tr>
+                
                 </table>
               </div>
             </div>
@@ -182,8 +155,32 @@ const About = () => {
           </div>
         </div> */}
       </div>
-      <div className="work-process">
-        
+      <div className="skill-process parent">
+       <div className="skill-cont cont">
+       <div className="heading">
+          <h3>
+            My <span className="strong">
+              Skills
+            </span>
+          </h3>
+        </div>
+
+        <div className="skils">
+         {
+          skill.map((item,index)=>(
+            <div className="skill"  key={index} >
+            <div className="icon">
+              {item.icon}
+            </div>
+          <p>
+          {item.title}
+          </p>
+            </div>
+          ))
+         }
+
+        </div>
+       </div>
       </div>
     </>
   );

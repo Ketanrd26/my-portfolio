@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../Header/header.scss";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.webp";
@@ -10,13 +10,33 @@ import { LuMail } from "react-icons/lu";
 import { IoCallOutline } from "react-icons/io5";
 import { FiGithub } from "react-icons/fi";
 const Header = () => {
+
+  const [header, setHeader] = useState(false);
+
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setHeader(true);
+      } else {
+        setHeader(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <>
       <div className="headear-parent parent">
-        <div className="header-menu">
+        <div className={header ? "header-menu active" : "header-menu"}>
           <div className="top">
             <img src={logo} alt="" />
-            <Link href="#about">Projects</Link>
+            <a href="#projects">Projects</a>
             <Link href="">Contact Us</Link>
             <a href="#about">About Us</a>
           </div>
