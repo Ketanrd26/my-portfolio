@@ -1,6 +1,7 @@
 import React from "react";
 import "./Project.scss";
 import firstImage from "../../assets/e-com.webp";
+import { FiExternalLink } from "react-icons/fi";
 const Project = () => {
   const projects = [
     {
@@ -24,13 +25,11 @@ const Project = () => {
   ];
   return (
     <>
-      <div className="project-parent parent" id="projects" >
+      <div className="project-parent parent" id="projects">
         <div className="heading-cont cont">
-         <h2 className="title" style={{color:"black"}}  >
-            My <span className="strong">
-            Project
-            </span>
-         </h2>
+          <h2 className="title" style={{ color: "black" }}>
+            My <span className="strong">Project</span>
+          </h2>
         </div>
         <div className="project-cont cont">
           {projects.map((item, index) => (
@@ -45,6 +44,11 @@ const Project = () => {
                 </div>
                 <div className="desc">
                   <p>{item.description}</p>
+                </div>
+                <div className="link">
+                  <a href="">
+                  <FiExternalLink />
+                  </a>
                 </div>
               </div>
             </div>
