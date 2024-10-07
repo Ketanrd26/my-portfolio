@@ -30,10 +30,35 @@ const Header = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  const [mobNav , setMobNav] = useState(false)
   return (
     <>
       <div className="headear-parent parent">
         <div className={header ? "header-menu active" : "header-menu"}>
+          <div className="top">
+            <img src={logo} alt="" />
+            <a href="#projects">Projects</a>
+            <Link href="">Contact Us</Link>
+            <a href="#about">About Us</a>
+          </div>
+          <div className="sociaL-icons">
+            <Link>
+            <FaInstagram />
+            </Link>
+            <Link>
+            <FiLinkedin />
+            </Link>
+            <Link>
+            <FiGithub />
+            </Link>
+            <Link>
+            <IoCallOutline />
+            </Link>
+          </div>
+        </div>
+
+        <div className={mobNav ? "header-mob-menu mobnavActive" : "header-mob-menu"}>
           <div className="top">
             <img src={logo} alt="" />
             <a href="#projects">Projects</a>
