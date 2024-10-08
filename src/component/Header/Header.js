@@ -63,8 +63,8 @@ const Header = () => {
 
         <div className={mobNav ? "header-mob-menu mobnavActive" : "header-mob-menu"}>
           <div className="top">
-            <a href="#home" className="img" >
-            <img src={logo} alt="" onClick={()=>setMobNav(!mobNav)} />
+            <a href="#home" className="img" onClick={()=>setMobNav(!mobNav)} >
+            <img src={logo} alt=""  />
             </a>
             <a href="#projects">Projects</a>
             <Link href="">Contact Us</Link>
