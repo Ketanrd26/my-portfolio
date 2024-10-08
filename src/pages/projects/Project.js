@@ -9,13 +9,13 @@ const Project = () => {
       image: firstImage,
       title: "E-commerce Web Application",
       description:
-        "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. ",
+        "This project showcases a fully functional e-commerce web application built using the MERN stack (MongoDB, Express.js, React, Node.js). The application provides a seamless shopping experience, enabling users to browse products, add items to their cart, and complete purchases effortlessly. ",
     },
     {
       image: website,
       title: "website",
       description:
-        "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. ",
+        "This project features a visually stunning portfolio website designed for a tattoo artist, showcasing their unique artistry and styles. Built with modern web technologies, the site serves as an online gallery where potential clients can explore the artist's work, book appointments, and learn more about the tattooing process.",
     },
     // {
     //   image: firstImage,

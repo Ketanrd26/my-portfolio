@@ -48,8 +48,7 @@ ARTIST
               </h3>
             </div>
             <p className="para">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
-              minima molestiae atque, magni eius ab.
+            Crafting immersive digital experiences through cutting-edge VFX and innovative web applications.
             </p>
             <a className="btn" href="/my resume for full stack.pdf" download>
               Download resume

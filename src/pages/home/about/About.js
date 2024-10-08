@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import "../about/about.scss";
 import "@lottiefiles/lottie-player";
 
-
 // icons
 
 import { FaGithub } from "react-icons/fa";
@@ -15,50 +14,50 @@ import { GrMysql } from "react-icons/gr";
 import { SiAutodeskmaya } from "react-icons/si";
 import { SiAdobephotoshop } from "react-icons/si";
 import { FaBootstrap } from "react-icons/fa";
+import { SiAdobeaftereffects } from "react-icons/si";
 const About = () => {
-const skill = [
-  {
-    icon :<FaGithub /> ,
-    title:"github"
-  },
-  {
-    icon :<SiJavascript /> ,
-    title:"Javascript"
-  },
-  {
-    icon :<FaHtml5 /> ,
-    title:"html"
-  },
-  {
-    icon :<FaSass /> ,
-    title:"sass"
-  },
-  {
-    icon :<RiNodejsLine /> ,
-    title:"Node js"
-  },
-  {
-    icon :<SiMongodb /> ,
-    title:"Mongodb"
-  },
-  {
-    icon :<GrMysql /> ,
-    title:"My Sql"
-  },
-  {
-    icon :<FaBootstrap />,
-    title:"Bootstrap"
-  },
-  {
-    icon :<SiAutodeskmaya /> ,
-    title:"Maya"
-  },
-  {
-    icon :<SiAdobephotoshop /> ,
-    title:"Photoshop"
-  },
-  
-]
+  const skill = [
+    {
+      icon: <FaGithub />,
+      title: "github",
+    },
+    {
+      icon: <SiJavascript />,
+      title: "Javascript",
+    },
+    {
+      icon: <FaHtml5 />,
+      title: "html",
+    },
+    {
+      icon: <FaSass />,
+      title: "sass",
+    },
+    {
+      icon: <RiNodejsLine />,
+      title: "Node js",
+    },
+    {
+      icon: <SiMongodb />,
+      title: "Mongodb",
+    },
+    {
+      icon: <GrMysql />,
+      title: "My Sql",
+    },
+    {
+      icon: <FaBootstrap />,
+      title: "Bootstrap",
+    },
+    {
+      icon: <SiAdobeaftereffects />,
+      title: "After effects",
+    },
+    {
+      icon: <SiAdobephotoshop />,
+      title: "Photoshop",
+    },
+  ];
   return (
     <>
       <div className="about-section-parent parent blackCursor" id="about">
@@ -74,12 +73,13 @@ const skill = [
             </div>
             <div className="about-me">
               <p className="about-para">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam
-                sed nemo id provident quidem libero, modi fuga quos architecto,
-                ea velit iure rem alias quibusdam. Culpa tenetur, non ducimus
-                nesciunt quidem doloremque quasi temporibus dolorum facilis
-                totam molestiae nisi ex expedita suscipit porro officia enim
-                voluptate cumque, error quaerat amet?
+                I believe in the power of collaboration and continuous learning,
+                which drives me to stay updated with the latest trends and
+                technologies in both VFX and web development. Whether it's
+                designing immersive 3D environments, optimizing user interfaces,
+                or implementing complex functionalities, I approach every
+                project with meticulous attention to detail and a commitment to
+                excellence.
               </p>
               <div className="sections">
                 <table className="w-full">
@@ -105,13 +105,12 @@ const skill = [
                       Vfx & Animation & Full Stack Developer
                     </td>
                   </tr>
-                
                 </table>
               </div>
             </div>
           </div>
         </div>
-{/* 
+        {/* 
         <div className="skills-cont cont">
           <h4>Development Skills</h4>
           <p>
@@ -156,31 +155,22 @@ const skill = [
         </div> */}
       </div>
       <div className="skill-process parent">
-       <div className="skill-cont cont">
-       <div className="heading">
-          <h3>
-            My <span className="strong">
-              Skills
-            </span>
-          </h3>
-        </div>
+        <div className="skill-cont cont">
+          <div className="heading">
+            <h3>
+              My <span className="strong">Skills</span>
+            </h3>
+          </div>
 
-        <div className="skils">
-         {
-          skill.map((item,index)=>(
-            <div className="skill"  key={index} >
-            <div className="icon">
-              {item.icon}
-            </div>
-          <p>
-          {item.title}
-          </p>
-            </div>
-          ))
-         }
-
+          <div className="skils">
+            {skill.map((item, index) => (
+              <div className="skill" key={index}>
+                <div className="icon">{item.icon}</div>
+                <p>{item.title}</p>
+              </div>
+            ))}
+          </div>
         </div>
-       </div>
       </div>
     </>
   );
