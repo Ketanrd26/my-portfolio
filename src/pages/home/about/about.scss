@@ -110,13 +110,13 @@
     flex-direction: column;
     padding: 20px !important;
     .left {
-      height: 30%;
+     aspect-ratio: 1 !important;
       width: 100% !important;
       justify-content: center !important;
       align-items: center !important;
       .aboutimg {
-        height: 100%;
-        width: auto;
+        height: 100% !important;
+        width: 100% !important;
       }
     }
 
