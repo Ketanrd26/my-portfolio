@@ -58,6 +58,11 @@
 }
         .link{
           font-size: calc(var(--unit)*2);
+          transition: var(--trans);
+
+          &:hover{
+            color: blue;
+          }
         }
       }
     }

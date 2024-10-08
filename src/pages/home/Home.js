@@ -3,6 +3,7 @@ import "../home/home.scss";
 import About from "./about/About";
 import homeImg from "../../assets/photo.png"
 import Project from "../projects/Project";
+import Contact from "../contact/Contact"
 const Home = () => {
   const [showText1, setShowText1] = useState(true);
 
@@ -15,7 +16,7 @@ const Home = () => {
   }, []);
   return (
     <>
-      <div className="home-parent parent">
+      <div className="home-parent parent" id="#home" > 
         <div className="home-cont cont">
           <div className="left">
             <p className="heading">Hi,I'M Ketan</p>
@@ -66,6 +67,10 @@ ARTIST
 
       {/* Projects */}
       <Project/>
+
+      {/* contact */}
+
+      <Contact/>
     </>
   );
 };

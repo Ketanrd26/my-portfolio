@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Project.scss";
 import firstImage from "../../assets/e-com.webp";
+import website from "../../assets/website.jpg";
 import { FiExternalLink } from "react-icons/fi";
 const Project = () => {
   const projects = [
@@ -11,17 +12,17 @@ const Project = () => {
         "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. ",
     },
     {
-      image: firstImage,
-      title: "E-commerce Web Application",
+      image: website,
+      title: "website",
       description:
         "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. ",
     },
-    {
-      image: firstImage,
-      title: "E-commerce Web Application",
-      description:
-        "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. ",
-    },
+    // {
+    //   image: firstImage,
+    //   title: "E-commerce Web Application",
+    //   description:
+    //     "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. ",
+    // },
   ];
 
 
@@ -32,7 +33,7 @@ const Project = () => {
       <div className="project-parent parent" id="projects">
         <div className="heading-cont cont">
           <h2 className="title" style={{ color: "black" }}>
-            My <span className="strong">Project</span>
+            My <span className="strong">Projects</span>
           </h2>
         </div>
         <div className="project-cont cont">

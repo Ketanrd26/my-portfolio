@@ -37,9 +37,11 @@ const Header = () => {
       <div className="headear-parent parent">
         <div className={header ? "header-menu active" : "header-menu"}>
           <div className="top">
+          <a href="#home" className="img" >
             <img src={logo} alt="" />
+            </a>
             <a href="#projects">Projects</a>
-            <Link href="">Contact Us</Link>
+            <a href="#contact">Contact Us</a>
             <a href="#about">About Us</a>
           </div>
           <div className="sociaL-icons">
@@ -60,7 +62,9 @@ const Header = () => {
 
         <div className={mobNav ? "header-mob-menu mobnavActive" : "header-mob-menu"}>
           <div className="top">
-            <img src={logo} alt="" />
+            <a href="#home" className="img" >
+            <img src={logo} alt="" onClick={()=>setMobNav(!mobNav)} />
+            </a>
             <a href="#projects">Projects</a>
             <Link href="">Contact Us</Link>
             <a href="#about">About Us</a>

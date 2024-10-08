@@ -88,7 +88,7 @@ const skill = [
                     <td className="text-gray-500 font-light">Ketan Dudka</td>
                   </tr>
                   <tr className="p-4">
-                    <td className="bold text-black p-2">Study :</td>
+                    <td className="bold text-black p-2">Education :</td>
                     <td className="text-gray-500 font-light text-left">
                       SavitriBai Phule Pune Univercity
                     </td>
