@@ -9,6 +9,7 @@ import { FiLinkedin } from "react-icons/fi";
 import { LuMail } from "react-icons/lu";
 import { IoCallOutline } from "react-icons/io5";
 import { FiGithub } from "react-icons/fi";
+import { FaWhatsapp } from "react-icons/fa";
 const Header = () => {
 
   const [header, setHeader] = useState(false);
@@ -45,18 +46,18 @@ const Header = () => {
             <a href="#about">About Us</a>
           </div>
           <div className="sociaL-icons">
-            <Link>
-            <FaInstagram />
-            </Link>
-            <Link>
+            <a>
+            <FaWhatsapp />
+            </a>
+            <a  href="https://www.linkedin.com/in/ketan-dudka-a72756299/" target="blank" >
             <FiLinkedin />
-            </Link>
-            <Link>
+            </a>
+            <a  href="https://github.com/Ketanrd26" target=" blank" >
             <FiGithub />
-            </Link>
-            <Link>
+            </a>
+            <a href="tel:+917028997574" target="blank" >
             <IoCallOutline />
-            </Link>
+            </a>
           </div>
         </div>
 

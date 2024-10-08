@@ -72,7 +72,7 @@ const Contact = () => {
                 contact
               </button>
               <div className="contact-icon-box">
-                <a target="__blank" className="linkedin icon">
+                <a target="__blank" className="linkedin icon"    href="https://www.linkedin.com/in/ketan-dudka-a72756299/" >
                   <RiLinkedinLine />
                 </a>
                 <a target="__blank" className="facebook icon">
@@ -88,7 +88,7 @@ const Contact = () => {
                 >
                   <FaWhatsapp />
                 </a>
-                <a target="__blank" className="whatsapp icon">
+                <a target="__blank" className="whatsapp icon"  href="https://github.com/Ketanrd26" >
                   <FaGithub />
                 </a>
               </div>
@@ -115,7 +115,7 @@ const Contact = () => {
             exceptional.
           </p>
           <a
-            href="mailto:mdzaigham27@gmail.com"
+            href="mailto:ketandudka566123@gmail.com"
             className="contact-email handle-detail"
             ref={(el) => (contactRefs.current[2] = el)}
           >
@@ -124,7 +124,7 @@ const Contact = () => {
             </span>
           </a>
           <a
-            href="tel:+918210272603"
+            href="tel:+917028997574"
             className="contact-number handle-detail"
             ref={(el) => (contactRefs.current[3] = el)}
           >

@@ -54,7 +54,7 @@
         // padding: 20px;
         transform: rotate(-90deg);
         font-size: var(--unit);
-
+cursor: pointer;
         &:hover {
         color: rgba(255, 255, 255, 0.315);
         }
@@ -76,6 +76,7 @@
       a {
         font-size: 25px;
         color: var(--white);
+        cursor: pointer;
       }
     }
   }
