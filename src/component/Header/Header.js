@@ -11,9 +11,7 @@ import { IoCallOutline } from "react-icons/io5";
 import { FiGithub } from "react-icons/fi";
 import { FaWhatsapp } from "react-icons/fa";
 const Header = () => {
-
   const [header, setHeader] = useState(false);
-
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,63 +24,72 @@ const Header = () => {
 
     window.addEventListener("scroll", handleScroll);
 
-
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
-  const [mobNav , setMobNav] = useState(false)
+  const [mobNav, setMobNav] = useState(false);
   return (
     <>
       <div className="headear-parent parent">
         <div className={header ? "header-menu active" : "header-menu"}>
           <div className="top">
-          <a href="#home" className="img" >
-            <img src={logo} alt="" />
+            <a href="#home" className="img">
+              <img src={logo} alt="" />
             </a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact Us</a>
             <a href="#about">About Us</a>
           </div>
           <div className="sociaL-icons">
-            <a>
-            <FaWhatsapp />
+            <a href="https://wa.me/+917028997574">
+              <FaWhatsapp />
             </a>
-            <a  href="https://www.linkedin.com/in/ketan-dudka-a72756299/" target="blank" >
-            <FiLinkedin />
+            <a
+              href="https://www.linkedin.com/in/ketan-dudka-a72756299/"
+              target="blank"
+            >
+              <FiLinkedin />
             </a>
-            <a  href="https://github.com/Ketanrd26" target=" blank" >
-            <FiGithub />
+            <a href="https://github.com/Ketanrd26" target=" blank">
+              <FiGithub />
             </a>
-            <a href="tel:+917028997574" target="blank" >
-            <IoCallOutline />
+            <a href="tel:+917028997574" target="blank">
+              <IoCallOutline />
             </a>
           </div>
         </div>
 
-        <div className={mobNav ? "header-mob-menu mobnavActive" : "header-mob-menu"}>
+        <div
+          className={
+            mobNav ? "header-mob-menu mobnavActive" : "header-mob-menu"
+          }
+        >
           <div className="top">
-            <a href="#home" className="img" onClick={()=>setMobNav(!mobNav)} >
-            <img src={logo} alt=""  />
+            <a href="#home" className="img" onClick={() => setMobNav(!mobNav)}>
+              <img src={logo} alt="" />
             </a>
             <a href="#projects">Projects</a>
             <Link href="">Contact Us</Link>
             <a href="#about">About Us</a>
           </div>
           <div className="sociaL-icons">
-            <Link>
-            <FaInstagram />
-            </Link>
-            <Link>
-            <FiLinkedin />
-            </Link>
-            <Link>
-            <FiGithub />
-            </Link>
-            <Link>
-            <IoCallOutline />
-            </Link>
+          <a href="https://wa.me/+917028997574"  target="blank">
+              <FaWhatsapp />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/ketan-dudka-a72756299/"
+              target="blank"
+            >
+              <FiLinkedin />
+            </a>
+            <a href="https://github.com/Ketanrd26" target=" blank">
+              <FiGithub />
+            </a>
+            <a href="tel:+917028997574" target="blank">
+              <IoCallOutline />
+            </a>
           </div>
         </div>
       </div>

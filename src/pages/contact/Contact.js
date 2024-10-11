@@ -72,23 +72,40 @@ const Contact = () => {
                 contact
               </button>
               <div className="contact-icon-box">
-                <a target="__blank" className="linkedin icon"    href="https://www.linkedin.com/in/ketan-dudka-a72756299/" >
+                <a
+                  target="__blank"
+                  className="linkedin icon"
+                  href="https://www.linkedin.com/in/ketan-dudka-a72756299"
+                >
                   <RiLinkedinLine />
                 </a>
-                <a target="__blank" className="facebook icon">
+                <a
+                  target="__blank"
+                  href="https://www.facebook.com/ketan.dudka.9"
+                  className="facebook icon"
+                >
                   <RiFacebookLine />
                 </a>
-                <a target="__blank" className="instagram icon">
+                <a
+                  target="__blank"
+                  href="https://www.instagram.com/_ketan_rd_26/profilecard/?igsh=MzI0ZXV3dGx4emtl"
+                  className="instagram icon"
+                >
                   <FaInstagram />
                 </a>
                 <a
+                  href="https://wa.me/+917028997574"
                   target="_blank" // Opens in a new tab
                   rel="noopener noreferrer" // Security best practice
                   className="whatsapp icon"
                 >
                   <FaWhatsapp />
                 </a>
-                <a target="__blank" className="whatsapp icon"  href="https://github.com/Ketanrd26" >
+                <a
+                  target="__blank"
+                  className="whatsapp icon"
+                  href="https://github.com/Ketanrd26"
+                >
                   <FaGithub />
                 </a>
               </div>
@@ -119,9 +136,7 @@ const Contact = () => {
             className="contact-email handle-detail"
             ref={(el) => (contactRefs.current[2] = el)}
           >
-            <span>
-              Ketandudka566123@gmail.com
-            </span>
+            <span>Ketandudka566123@gmail.com</span>
           </a>
           <a
             href="tel:+917028997574"
