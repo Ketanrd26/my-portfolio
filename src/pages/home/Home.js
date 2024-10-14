@@ -51,7 +51,7 @@ ARTIST
             Crafting immersive digital experiences through cutting-edge VFX and innovative web applications.
             </p>
             <a className="btn" href="/my resume for full stack.pdf" download>
-              Download resume
+             Resume
             </a>
           </div>
           <div className="right">

@@ -72,7 +72,7 @@ const Header = () => {
 
         <div className="right">
           <a className="btn2" href="/my resume for full stack.pdf" download>
-            Download resume
+           Resume
           </a>
 
           <div className="hamburger" onClick={() => setMobNav(!mobNav)}>
