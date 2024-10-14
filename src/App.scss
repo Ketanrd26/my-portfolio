@@ -148,6 +148,27 @@ a {
     color: var(--white);
   }
 }
+.btn2 {
+  background-color: var(--black);
+  padding: var(--unit);
+  border-radius: calc(var(--unit) / 2);
+  font-weight: 500;
+  cursor: pointer;
+  text-transform: capitalize;
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: var(--trans);
+  border: 1px solid var(--white);
+
+
+  &:hover {
+    border: 1px solid var(--black);
+    background-color: transparent;
+    color: var(--black);
+  }
+}
 
 .title {
   color: var(--white);
