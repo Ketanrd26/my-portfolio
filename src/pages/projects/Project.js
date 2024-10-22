@@ -8,6 +8,7 @@ const Project = () => {
     {
       image: firstImage,
       title: "E-commerce Web Application",
+      link:"https://ketanrd-amazon.vercel.app",
       description:
         "This project showcases a fully functional e-commerce web application built using the MERN stack (MongoDB, Express.js, React, Node.js). The application provides a seamless shopping experience, enabling users to browse products, add items to their cart, and complete purchases effortlessly. ",
     },
@@ -25,9 +26,6 @@ const Project = () => {
     // },
   ];
 
-
-
-
   return (
     <>
       <div className="project-parent parent" id="projects">
@@ -38,7 +36,7 @@ const Project = () => {
         </div>
         <div className="project-cont cont">
           {projects.map((item, index) => (
-            <div className="firstProject">
+            <div className="firstProject" key={index} >
               <div
                 className="image bg-img-cover"
                 style={{ backgroundImage: `url(${item.image})` }}
@@ -51,8 +49,8 @@ const Project = () => {
                   <p>{item.description}</p>
                 </div>
                 <div className="link">
-                  <a href="">
-                  <FiExternalLink />
+                  <a href={item.link} target="blank">
+                    <FiExternalLink />
                   </a>
                 </div>
               </div>
