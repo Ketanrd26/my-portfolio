@@ -15,6 +15,7 @@ const Project = () => {
     {
       image: website,
       title: "website",
+      link:"https://maulee.vercel.app/",
       description:
         "This project features a visually stunning portfolio website designed for a tattoo artist, showcasing their unique artistry and styles. Built with modern web technologies, the site serves as an online gallery where potential clients can explore the artist's work, book appointments, and learn more about the tattooing process.",
     },

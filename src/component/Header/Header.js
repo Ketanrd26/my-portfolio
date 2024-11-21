@@ -40,10 +40,11 @@ const Header = () => {
       <div className="headear-parent parent">
         <div className={header ? "header-menu active" : "header-menu"}>
           <div className="top">
-            <a href="#home" className="img">
+            <Link to="/" className="img">
               <img src={logo} alt="" />
-            </a>
+            </Link>
             <a href="#projects">Projects</a>
+            <Link to="/blogs">Blogs</Link>
             <a href="#contact">Contact Us</a>
             <a href="#about">About Us</a>
           </div>
@@ -87,6 +88,7 @@ const Header = () => {
         <div className={mobNav ? "mobnav-list active" : "mobnav-list"}>
           <div className="top">
             <a href="#projects">Projects</a>
+            <Link to="/blogs">Blogs</Link>
             <a href="#contact">Contact Us</a>
             <a href="#about">About Us</a>
           </div>
